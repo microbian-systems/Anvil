@@ -1,18 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
-	<AssemblyName>Anvil.Crafter</AssemblyName>
-	<RootNamespace>Anvil.Crafter</RootNamespace>
+    <AssemblyName>Anvil.Crafter</AssemblyName>
+    <RootNamespace>Anvil.Crafter</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-	<Compile Update="**\*.axaml.cs">
-		<DependentUpon>%(Filename)</DependentUpon>
-	</Compile>
-	<EmbeddedResource Include="**\*.axaml">
-		<SubType>Designer</SubType>
-	</EmbeddedResource>
+    <Compile Update="**\*.axaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="**\*.axaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Remove=".gitignore" />
   </ItemGroup>
   <ItemGroup>
